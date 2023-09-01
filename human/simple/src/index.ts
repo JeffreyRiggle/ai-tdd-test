@@ -1,7 +1,7 @@
 export class LocalStorageLog {
     private logs = new Map();
 
-    public readLog(partition) {
+    public readLog<T>(partition: string): T[] {
         const existing = this.logs.get(partition);
         if (existing) {
             return existing;
@@ -18,7 +18,7 @@ export class LocalStorageLog {
         return partitionValue;
     }
 
-    public appendLog(partition, value) {
+    public appendLog<T>(partition: string, value: T) {
         let existing = this.logs.get(partition);
         if (!existing) {
             existing = [];
