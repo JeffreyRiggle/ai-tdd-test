@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2019",
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "allowJs": true,
+        "noEmit": true,
+        "strict": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+    },
+    "include": [
+        "index.d.ts",
+        "src/*.ts",
+        "src/**/*.ts",
+    ]
+}
